@@ -7,9 +7,10 @@
 //
 
 #import "JRMainController.h"
+#import "JRItemsPannel.h"
 
 @interface JRMainController ()
-
+@property (nonatomic, strong) JRItemsPannel *itemsPannel;
 @end
 
 @implementation JRMainController
@@ -19,6 +20,9 @@
     self.title = @"Main";
     self.view.backgroundColor = [UIColor whiteColor];
     
+    _itemsPannel =  [[JRItemsPannel alloc] initWithFrame:CGRectMake(0, 50, self.view.width, 300)];
+    _itemsPannel.lettersSource = @[@"c",@"a",@"t",@"e"];
+    [self.view addSubview:_itemsPannel];
 }
 
 - (void)didReceiveMemoryWarning {
