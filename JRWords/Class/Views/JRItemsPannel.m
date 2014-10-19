@@ -102,7 +102,6 @@
     [_selectedLetters addObject:letter];
     [firstAvailableButton setTitleInNormalState:letter];
     firstAvailableButton.backgroundColor = [UIColor blackColor];
-    firstAvailableButton.hidden = NO;
     firstAvailableButton.enabled = YES;
     
     /*
@@ -127,7 +126,9 @@
 - (void)selectedButtonAction:(id)sender {
     
     UIButton *selectedButton = sender;
-    selectedButton.hidden = YES;
+//    selectedButton.hidden = YES;
+    selectedButton.backgroundColor = [UIColor clearColor];
+    [selectedButton setTitleInNormalState:@""];
     
     NSString *selectedLetter = _selectedLetters[selectedButton.tag - kTagSelectedButtonBase];
     NSInteger buttonIndex = [_lettersSource indexOfObject:selectedLetter];

@@ -51,7 +51,7 @@
     [self.view addSubview:_itemsPannel];
     
     _tipsPannel = [[JRTipsPannel alloc] initWithFrame:CGRectMake(0, _itemsPannel.bottom+5, self.view.width, 100)];
-    _tipsPannel.tipInChinese = @"开始";
+    _tipsPannel.tipInChinese = @"";
     [_tipsPannel setNextButtonActionBlock:^(id sender) {
         [weakSelf loadWordToItemPannel];
     }];
@@ -68,6 +68,14 @@
 - (void)addScoreToPannelWithRightAnswer:(BOOL)right {
     NSInteger adding = right?5:-5;
     _scorePannel.totalScore = _scorePannel.totalScore + adding;
+    if (_scorePannel.totalScore < 0) {
+        // game over;
+        RIButtonItem *buttonItem = [RIButtonItem itemWithLabel:@"Fine" action:^{
+            _scorePannel.totalScore = 0;
+            [self loadWordToItemPannel];
+        }];
+        [[[UIAlertView alloc] initWithTitle:@"Oh, No" message:@"Sorry to tell you game is over for your stupid mind!" cancelButtonItem:buttonItem otherButtonItems:nil] show];
+    }
 }
 
 - (void)showChineseMessageInPannel:(NSString *)tipInChinese {
