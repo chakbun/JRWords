@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface JRFloatView : UIView
-
+@property (nonatomic, assign) NSInteger totalScore;
 @end

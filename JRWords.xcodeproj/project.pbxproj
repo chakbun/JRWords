@@ -28,6 +28,7 @@
 		DFDA511619F2C06F00C68B65 /* UIButton+JRAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDA511519F2C06F00C68B65 /* UIButton+JRAdditions.m */; };
 		DFDA69B719F3B6E100DDD7A1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFDA69B619F3B6E100DDD7A1 /* Default-568h@2x.png */; };
 		DFDA69BA19F3BEDF00DDD7A1 /* JRFloatView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDA69B919F3BEDF00DDD7A1 /* JRFloatView.m */; };
+		DFDA69BD19F40E9500DDD7A1 /* JRUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDA69BC19F40E9500DDD7A1 /* JRUserDefaults.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,8 @@
 		DFDA69B619F3B6E100DDD7A1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		DFDA69B819F3BEDF00DDD7A1 /* JRFloatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRFloatView.h; sourceTree = "<group>"; };
 		DFDA69B919F3BEDF00DDD7A1 /* JRFloatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRFloatView.m; sourceTree = "<group>"; };
+		DFDA69BB19F40E9500DDD7A1 /* JRUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRUserDefaults.h; sourceTree = "<group>"; };
+		DFDA69BC19F40E9500DDD7A1 /* JRUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRUserDefaults.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +185,8 @@
 				DFA1A4FC19F2A7E1002056B1 /* AppDelegate.h */,
 				DFA1A4FD19F2A7E1002056B1 /* AppDelegate.m */,
 				DFA1A51C19F2B866002056B1 /* AppGlobal.h */,
+				DFDA69BB19F40E9500DDD7A1 /* JRUserDefaults.h */,
+				DFDA69BC19F40E9500DDD7A1 /* JRUserDefaults.m */,
 			);
 			name = App;
 			path = Class/App;
@@ -444,6 +449,7 @@
 				DFDA511619F2C06F00C68B65 /* UIButton+JRAdditions.m in Sources */,
 				DF2864DE19F3630B00F0168F /* NSDictionary+JRAdditions.m in Sources */,
 				DF2864E419F38A1400F0168F /* JRTipsPannel.m in Sources */,
+				DFDA69BD19F40E9500DDD7A1 /* JRUserDefaults.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

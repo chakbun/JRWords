@@ -11,5 +11,4 @@
 @interface UIButton (JRAdditions)
 
 - (void)setTitleInNormalState:(NSString *)title;
-
 @end

@@ -13,6 +13,7 @@
 #import "NSDictionary+JRAdditions.h"
 #import "UIAlertView+Blocks.h"
 #import "iToast.h"
+#import "JRUserDefaults.h"
 
 @interface JRMainController ()
 @property (nonatomic, strong) JRItemsPannel *itemsPannel;
@@ -28,6 +29,7 @@
     self.title = @"Main";
     self.view.backgroundColor = [UIColor whiteColor];
     __weak __typeof(self) weakSelf = self;
+
 
     _scorePannel = [[JRScorePanel alloc] initWithFrame:CGRectMake(self.view.width/2.0, 10, self.view.width/2.0, 50)];
     _scorePannel.left = _scorePannel.left - 40;
@@ -87,6 +89,7 @@
     if (_scorePannel.totalScore < 0) {
         // game over;
         RIButtonItem *buttonItem = [RIButtonItem itemWithLabel:@"Fine" action:^{
+            [[JRUserDefaults shareManager] refreshRaning:_scorePannel.totalScore];
             _scorePannel.totalScore = 0;
             [self loadWordToItemPannel];
         }];
