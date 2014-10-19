@@ -11,9 +11,11 @@
 
 #define kTagSourceButtonBase 10
 #define kTagSelectedButtonBase 20
+#define IntegerToString(number) [NSString stringWithFormat:@"%d",number]
 
 @interface JRItemsPannel ()
-@property (nonatomic,strong) NSMutableArray *selectedLetters;
+@property (nonatomic, strong) NSMutableArray *selectedLetters;
+@property (nonatomic, strong) NSMutableDictionary *buttonsMapping;
 @end
 
 @implementation JRItemsPannel
@@ -22,6 +24,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         _selectedLetters = [[NSMutableArray alloc] init];
+        _buttonsMapping = [[NSMutableDictionary alloc] init];
     }
     return self;
 }
@@ -34,6 +37,7 @@
         }
     }
     [_selectedLetters removeAllObjects];
+    [_buttonsMapping removeAllObjects];
     
     _lettersSource = lettersSource;
     
@@ -104,6 +108,8 @@
     firstAvailableButton.backgroundColor = [UIColor blackColor];
     firstAvailableButton.enabled = YES;
     
+    [_buttonsMapping setObject:@(sourceButton.tag) forKey:IntegerToString(firstAvailableButton.tag)];
+    
     /*
      let the previous button disable, if the button is exist;
      */
@@ -126,15 +132,12 @@
 - (void)selectedButtonAction:(id)sender {
     
     UIButton *selectedButton = sender;
-//    selectedButton.hidden = YES;
     selectedButton.backgroundColor = [UIColor clearColor];
     [selectedButton setTitleInNormalState:@""];
     
-    NSString *selectedLetter = _selectedLetters[selectedButton.tag - kTagSelectedButtonBase];
-    NSInteger buttonIndex = [_lettersSource indexOfObject:selectedLetter];
-    UIButton *sourceButton = (UIButton *)[self viewWithTag:(buttonIndex + kTagSourceButtonBase)];
+    UIButton *sourceButton = (UIButton *)[self viewWithTag:[[_buttonsMapping objectForKey:IntegerToString(selectedButton.tag)] intValue]];
     sourceButton.hidden = NO;
-    [_selectedLetters removeObject:selectedLetter];
+    [_selectedLetters removeLastObject];
     
     /*
      let the previous button enbale, if the button is exist;
