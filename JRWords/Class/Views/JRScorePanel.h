@@ -10,4 +10,5 @@
 
 @interface JRScorePanel : UIView
 @property (nonatomic, assign) NSInteger totalScore;
+@property (nonatomic, strong) void (^hintActionBlock)();
 @end

@@ -26,6 +26,7 @@
 		DFA1A51619F2AA6A002056B1 /* UIView+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA1A51519F2AA6A002056B1 /* UIView+Helpers.m */; };
 		DFA1A51B19F2B3C6002056B1 /* JRItemsPannel.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA1A51A19F2B3C6002056B1 /* JRItemsPannel.m */; };
 		DFDA511619F2C06F00C68B65 /* UIButton+JRAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDA511519F2C06F00C68B65 /* UIButton+JRAdditions.m */; };
+		DFDA69B719F3B6E100DDD7A1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFDA69B619F3B6E100DDD7A1 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		DFDA511319F2BA1900C68B65 /* JRWords-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JRWords-Prefix.pch"; sourceTree = "<group>"; };
 		DFDA511419F2C06F00C68B65 /* UIButton+JRAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+JRAdditions.h"; sourceTree = "<group>"; };
 		DFDA511519F2C06F00C68B65 /* UIButton+JRAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+JRAdditions.m"; sourceTree = "<group>"; };
+		DFDA69B619F3B6E100DDD7A1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +241,7 @@
 		DFA1A50719F2A7F5002056B1 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				DFDA69B619F3B6E100DDD7A1 /* Default-568h@2x.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -370,6 +373,7 @@
 				DFA1A4E119F2A4BE002056B1 /* LaunchScreen.xib in Resources */,
 				DF2864D219F3588400F0168F /* JRWordsSource.plist in Resources */,
 				DFA1A4DE19F2A4BE002056B1 /* Images.xcassets in Resources */,
+				DFDA69B719F3B6E100DDD7A1 /* Default-568h@2x.png in Resources */,
 				DFA1A4F919F2A7D5002056B1 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

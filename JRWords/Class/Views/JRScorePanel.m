@@ -29,6 +29,10 @@
         _scoreLabel.width = self.width - _titleLabel.width;
         _scoreLabel.adjustsFontSizeToFitWidth = YES;
         
+        UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction:)];
+        _scoreLabel.userInteractionEnabled = YES;
+        [_scoreLabel addGestureRecognizer:tapGesture];
+        
         self.backgroundColor = [UIColor clearColor];
         
         [self addSubview:_titleLabel];
@@ -44,6 +48,11 @@
 }
 
 #pragma mark --Misc
+- (void)tapAction:(UIGestureRecognizer *)recognizer {
+    if (_hintActionBlock) {
+        _hintActionBlock();
+    }
+}
 
 - (UILabel *)createLabel4ScorePanel {
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 0, self.height)];
