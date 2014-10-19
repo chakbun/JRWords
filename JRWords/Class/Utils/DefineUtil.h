@@ -30,9 +30,9 @@
 #define LOG_MACRO(x) NSLog(@"%s=\n%s", #x, __toString(x))
 
 #ifdef DEBUG
-#define DeLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
 #else
-#define DeLog(...)
+#define DLog(...)
 #endif
 
 //String

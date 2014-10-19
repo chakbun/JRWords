@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0DE552081E6B48A6BFF8858F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B22B8DF9CCE94BE087552045 /* libPods.a */; };
+		DF2864D219F3588400F0168F /* JRWordsSource.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF2864D119F3588400F0168F /* JRWordsSource.plist */; };
+		DF2864D519F359D700F0168F /* JRDictionaryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2864D419F359D700F0168F /* JRDictionaryManager.m */; };
+		DF2864D819F35DCE00F0168F /* NSString+JRAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2864D719F35DCE00F0168F /* NSString+JRAdditions.m */; };
+		DF2864DB19F35E2D00F0168F /* NSArray+JRAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2864DA19F35E2D00F0168F /* NSArray+JRAdditions.m */; };
+		DF2864DE19F3630B00F0168F /* NSDictionary+JRAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2864DD19F3630B00F0168F /* NSDictionary+JRAdditions.m */; };
+		DF2864E119F38A0000F0168F /* JRScorePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2864E019F38A0000F0168F /* JRScorePanel.m */; };
+		DF2864E419F38A1400F0168F /* JRTipsPannel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2864E319F38A1400F0168F /* JRTipsPannel.m */; };
 		DFA1A4DE19F2A4BE002056B1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFA1A4DD19F2A4BE002056B1 /* Images.xcassets */; };
 		DFA1A4E119F2A4BE002056B1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFA1A4DF19F2A4BE002056B1 /* LaunchScreen.xib */; };
 		DFA1A4ED19F2A4BE002056B1 /* JRWordsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA1A4EC19F2A4BE002056B1 /* JRWordsTests.m */; };
@@ -34,6 +41,19 @@
 /* Begin PBXFileReference section */
 		AEE447161AEC4F368F0CF3EB /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		B22B8DF9CCE94BE087552045 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF2864D119F3588400F0168F /* JRWordsSource.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = JRWordsSource.plist; sourceTree = "<group>"; };
+		DF2864D319F359D700F0168F /* JRDictionaryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRDictionaryManager.h; sourceTree = "<group>"; };
+		DF2864D419F359D700F0168F /* JRDictionaryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRDictionaryManager.m; sourceTree = "<group>"; };
+		DF2864D619F35DCE00F0168F /* NSString+JRAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JRAdditions.h"; sourceTree = "<group>"; };
+		DF2864D719F35DCE00F0168F /* NSString+JRAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JRAdditions.m"; sourceTree = "<group>"; };
+		DF2864D919F35E2D00F0168F /* NSArray+JRAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+JRAdditions.h"; sourceTree = "<group>"; };
+		DF2864DA19F35E2D00F0168F /* NSArray+JRAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+JRAdditions.m"; sourceTree = "<group>"; };
+		DF2864DC19F3630B00F0168F /* NSDictionary+JRAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JRAdditions.h"; sourceTree = "<group>"; };
+		DF2864DD19F3630B00F0168F /* NSDictionary+JRAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JRAdditions.m"; sourceTree = "<group>"; };
+		DF2864DF19F38A0000F0168F /* JRScorePanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRScorePanel.h; sourceTree = "<group>"; };
+		DF2864E019F38A0000F0168F /* JRScorePanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRScorePanel.m; sourceTree = "<group>"; };
+		DF2864E219F38A1400F0168F /* JRTipsPannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTipsPannel.h; sourceTree = "<group>"; };
+		DF2864E319F38A1400F0168F /* JRTipsPannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRTipsPannel.m; sourceTree = "<group>"; };
 		DFA1A4CD19F2A4BE002056B1 /* JRWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JRWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFA1A4DD19F2A4BE002056B1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DFA1A4E019F2A4BE002056B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -177,6 +197,8 @@
 		DFA1A50119F2A7E1002056B1 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				DF2864D319F359D700F0168F /* JRDictionaryManager.h */,
+				DF2864D419F359D700F0168F /* JRDictionaryManager.m */,
 			);
 			name = Data;
 			path = Class/Data;
@@ -195,6 +217,10 @@
 			children = (
 				DFA1A51919F2B3C6002056B1 /* JRItemsPannel.h */,
 				DFA1A51A19F2B3C6002056B1 /* JRItemsPannel.m */,
+				DF2864DF19F38A0000F0168F /* JRScorePanel.h */,
+				DF2864E019F38A0000F0168F /* JRScorePanel.m */,
+				DF2864E219F38A1400F0168F /* JRTipsPannel.h */,
+				DF2864E319F38A1400F0168F /* JRTipsPannel.m */,
 			);
 			name = Views;
 			path = Class/Views;
@@ -227,6 +253,7 @@
 		DFA1A50919F2A7F5002056B1 /* Texts */ = {
 			isa = PBXGroup;
 			children = (
+				DF2864D119F3588400F0168F /* JRWordsSource.plist */,
 			);
 			path = Texts;
 			sourceTree = "<group>";
@@ -238,6 +265,12 @@
 				DFA1A51519F2AA6A002056B1 /* UIView+Helpers.m */,
 				DFDA511419F2C06F00C68B65 /* UIButton+JRAdditions.h */,
 				DFDA511519F2C06F00C68B65 /* UIButton+JRAdditions.m */,
+				DF2864D619F35DCE00F0168F /* NSString+JRAdditions.h */,
+				DF2864D719F35DCE00F0168F /* NSString+JRAdditions.m */,
+				DF2864D919F35E2D00F0168F /* NSArray+JRAdditions.h */,
+				DF2864DA19F35E2D00F0168F /* NSArray+JRAdditions.m */,
+				DF2864DC19F3630B00F0168F /* NSDictionary+JRAdditions.h */,
+				DF2864DD19F3630B00F0168F /* NSDictionary+JRAdditions.m */,
 			);
 			name = Category;
 			path = Class/Category;
@@ -335,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFA1A4E119F2A4BE002056B1 /* LaunchScreen.xib in Resources */,
+				DF2864D219F3588400F0168F /* JRWordsSource.plist in Resources */,
 				DFA1A4DE19F2A4BE002056B1 /* Images.xcassets in Resources */,
 				DFA1A4F919F2A7D5002056B1 /* Info.plist in Resources */,
 			);
@@ -389,11 +423,17 @@
 			files = (
 				DFA1A50C19F2A844002056B1 /* JRRootController.m in Sources */,
 				DFA1A50419F2A7E1002056B1 /* AppDelegate.m in Sources */,
+				DF2864D819F35DCE00F0168F /* NSString+JRAdditions.m in Sources */,
 				DFA1A51219F2A933002056B1 /* JRMainController.m in Sources */,
+				DF2864DB19F35E2D00F0168F /* NSArray+JRAdditions.m in Sources */,
 				DFA1A51619F2AA6A002056B1 /* UIView+Helpers.m in Sources */,
 				DFA1A51B19F2B3C6002056B1 /* JRItemsPannel.m in Sources */,
+				DF2864D519F359D700F0168F /* JRDictionaryManager.m in Sources */,
 				DFA1A4FA19F2A7D5002056B1 /* main.m in Sources */,
+				DF2864E119F38A0000F0168F /* JRScorePanel.m in Sources */,
 				DFDA511619F2C06F00C68B65 /* UIButton+JRAdditions.m in Sources */,
+				DF2864DE19F3630B00F0168F /* NSDictionary+JRAdditions.m in Sources */,
+				DF2864E419F38A1400F0168F /* JRTipsPannel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +554,7 @@
 				INFOPLIST_FILE = JRWords/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a115e36a-c2c1-4e94-b3d5-a6edee97526e";
 			};
 			name = Debug;
 		};
@@ -522,12 +563,14 @@
 			baseConfigurationReference = AEE447161AEC4F368F0CF3EB /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Guangdong Transtek Medical Electronics Co., Ltd.";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JRWords/JRWords-Prefix.pch";
 				IBSC_FLATTEN_NIBS = NO;
 				INFOPLIST_FILE = JRWords/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a115e36a-c2c1-4e94-b3d5-a6edee97526e";
 			};
 			name = Release;
 		};

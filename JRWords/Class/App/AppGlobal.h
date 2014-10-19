@@ -15,5 +15,9 @@
  ==============================*/
 #import "UIView+Helpers.h"
 #import <ViewUtils.h>
+#import "NSString+JRAdditions.h"
+#import "NSArray+JRAdditions.h"
+#import "JRDictionaryManager.h"
+#import "DefineUtil.h"
 
 #endif

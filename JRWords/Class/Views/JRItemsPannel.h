@@ -10,4 +10,5 @@
 
 @interface JRItemsPannel : UIView
 @property (nonatomic, strong) NSArray *lettersSource;
+@property (nonatomic, strong) BOOL (^completedBlock)(NSString *combinedWord);
 @end
