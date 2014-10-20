@@ -31,21 +31,21 @@
 	<key>honey</key>
 	<string>蜜糖</string>
 	<key>bee</key>
-	<string>蜜蜂🐝</string>
+	<string>蜜蜂</string>
 	<key>beef</key>
 	<string>牛肉</string>
 	<key>pork</key>
 	<string>猪肉</string>
 	<key>bird</key>
-	<string>小鸟🐦</string>
+	<string>小鸟</string>
 	<key>dog</key>
-	<string>狗🐶</string>
+	<string>狗</string>
 	<key>cat</key>
-	<string>猫🐱</string>
+	<string>猫</string>
 	<key>pig</key>
-	<string>猪🐷</string>
+	<string>猪</string>
 	<key>horse</key>
-	<string>马🐎</string>
+	<string>马</string>
 	<key>room</key>
 	<string>房间</string>
 	<key>show</key>

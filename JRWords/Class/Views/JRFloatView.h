@@ -10,4 +10,10 @@
 
 @interface JRFloatView : UIView
 @property (nonatomic, assign) NSInteger totalScore;
+
+@property (nonatomic, strong) void(^rankActionBlock)(id sender);
+@property (nonatomic, strong) void(^shareActionBlock)(id sender);
+@property (nonatomic, strong) void(^restartActionBlock)(id sender);
+
+- (void)showView:(BOOL)show;
 @end
