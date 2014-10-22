@@ -79,7 +79,6 @@
     _tipsPannel = [[JRTipsPannel alloc] initWithFrame:CGRectMake(0, _itemsPannel.bottom+5, self.view.width, 100)];
     _tipsPannel.tipInChinese = @"";
     [_tipsPannel setNextButtonActionBlock:^(id sender) {
-        weakSelf.scorePannel.totalScore = 0;
         [weakSelf loadWordToItemPannel];
     }];
     [self.view addSubview:_tipsPannel];
@@ -87,6 +86,7 @@
     _floatView = [[JRFloatView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height)];
     
     [_floatView setRestartActionBlock:^(id sender) {
+        weakSelf.scorePannel.totalScore = 0;
         [weakSelf loadWordToItemPannel];
     }];
     
