@@ -15,6 +15,7 @@
 @property (nonatomic, strong) UIButton *rankingButton;
 @property (nonatomic, strong) UIButton *shareButton;
 @property (nonatomic, strong) UILabel *scoreLabel;
+@property (nonatomic, strong) UILabel *scoreTitleLabel;
 @end
 
 @implementation JRFloatView
@@ -32,34 +33,41 @@
         _contentView.layer.borderWidth = 1.0;
         _contentView.layer.cornerRadius = _contentView.width/25.0;
         
-        _scoreLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, _contentView.width, 40)];
+        _scoreTitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 10, _contentView.width, 40)];
+        _scoreTitleLabel.backgroundColor = [UIColor clearColor];
+        _scoreTitleLabel.font = [UIFont systemFontOfSize:20];
+        _scoreTitleLabel.adjustsFontSizeToFitWidth = YES;
+        _scoreTitleLabel.textAlignment = NSTextAlignmentCenter;
+        _scoreTitleLabel.text = @"Your Score: ";
+        
+        _scoreLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, _scoreTitleLabel.bottom, _contentView.width, 80)];
         _scoreLabel.backgroundColor = [UIColor clearColor];
-        _scoreLabel.font = [UIFont systemFontOfSize:20];
+        _scoreLabel.font = [UIFont systemFontOfSize:69];
         _scoreLabel.adjustsFontSizeToFitWidth = YES;
         _scoreLabel.textAlignment = NSTextAlignmentCenter;
         
         CGRect buttonRect = CGRectMake(0, 0, 70, 70);
         
-        _rankingButton = [self createLetterButtonWithFrame:buttonRect];
-        [_rankingButton setTitleInNormalState:@"Rank"];
-        _rankingButton.top = _scoreLabel.bottom;
-        _rankingButton.left = 22;
-        [_restartButton addTarget:self action:@selector(restartButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+//        _rankingButton = [self createLetterButtonWithFrame:buttonRect];
+//        [_rankingButton setTitleInNormalState:@"Rank"];
+//        _rankingButton.top = _scoreLabel.bottom;
+//        _rankingButton.left = 22;
+//        [_restartButton addTarget:self action:@selector(restartButtonAction:) forControlEvents:UIControlEventTouchUpInside];
         
         _restartButton = [self createLetterButtonWithFrame:buttonRect];
         [_restartButton setTitleInNormalState:@"Restart"];
-        _restartButton.top = _rankingButton.top;
-        _restartButton.left = _rankingButton.right+22;
+        _restartButton.top = _scoreLabel.bottom+20;
+        _restartButton.left = 40;
         [_restartButton addTarget:self action:@selector(restartButtonAction:) forControlEvents:UIControlEventTouchUpInside];
         
         _shareButton = [self createLetterButtonWithFrame:buttonRect];
         [_shareButton setTitleInNormalState:@"Share"];
-        _shareButton.top = _rankingButton.top;
-        _shareButton.left = _restartButton.right+22;
-        [_restartButton addTarget:self action:@selector(restartButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+        _shareButton.top = _restartButton.top;
+        _shareButton.right = _contentView.width - _restartButton.left;
+        [_shareButton addTarget:self action:@selector(shareButtonAction:) forControlEvents:UIControlEventTouchUpInside];
 
         [_contentView addSubview:_scoreLabel];
-        [_contentView addSubview:_rankingButton];
+        [_contentView addSubview:_scoreTitleLabel];
         [_contentView addSubview:_restartButton];
         [_contentView addSubview:_shareButton];
         
@@ -114,7 +122,7 @@
 
 - (void)setTotalScore:(NSInteger)totalScore {
     _totalScore = totalScore;
-    _scoreLabel.text = [NSString stringWithFormat:@"Total Score: %d",_totalScore];
+    _scoreLabel.text = [NSString stringWithFormat:@"%d",_totalScore];
 }
 
 - (UIButton *)createLetterButtonWithFrame:(CGRect)rect {
